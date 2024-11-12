@@ -1,29 +1,23 @@
-import React from 'react';
-import logo from './logo.svg';
-import { Counter } from './features/counter/Counter';
-import './App.css';
+import React from "react";
+import "./App.css";
+import {
+  BrowserRouter as Router,
+  Routes,
+  Route,
+} from "react-router-dom";
+import Header from "./components/Header"; // Ensure this import is correct
 
 function App() {
   return (
     <div className="app">
-      <h1>Hanji veerji</h1>
-
       <Router>
-      <>
-
-        <Switch>
-          <Route path="/" exact>
-            <h1>Haanji veerji</h1>
-          </Route>
-          <Route path="/topics">
-            <Topics />
-          </Route>
-          <Route path="/">
-            <Home />
-          </Route>
-        </Switch>
-      </>
-    </Router>
+        <Routes>
+          <Route
+            path="/"
+            element={<Header />} // Use element prop to render Header component
+          />
+        </Routes>
+      </Router>
     </div>
   );
 }

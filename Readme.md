@@ -1,29 +1,70 @@
-# Slack Clone Hack2Hire
-- So incase anyone is facing difficulty in installing the dependencies. 
-- Try Win+X which will raise a side bar menu from which you can select the Terminal(Administrator) and open it.
-- Upon opening the powershell you can type in `Set-ExecutionPolicy -ExecutionPolicy RemoteSigned`
-- Was facing the following discrepancies while installing npx env 
-```terminal
-PS C:\Users\ASUS\OneDrive\Desktop\PeerLoop> npx create-react-app slack-clone-youtube --template redux
->> 
-npm error code ENOENT
-npm error syscall lstat
-npm error path C:\Users\ASUS\AppData\Roaming\npm
-npm error errno -4058
-npm error enoent ENOENT: no such file or directory, lstat 'C:\Users\ASUS\AppData\Roaming\npm'
-npm error enoent This is related to npm not being able to find a file.
-npm error enoent
-npm error A complete log of this run can be found in: C:\Users\ASUS\AppData\Local\npm-cache\_logs\2024-11-08T20_23_26_966Z-debug-0.log
-PS C:\Users\ASUS\OneDrive\Desktop\PeerLoop> cd slack-clone-youtube
->>
-cd : Cannot find path 'C:\Users\ASUS\OneDrive\Desktop\PeerLoop\slack-clone-youtube' because it does not exist.
-At line:1 char:1
-+ cd slack-clone-youtube
-+ ~~~~~~~~~~~~~~~~~~~~~~
-    + CategoryInfo          : ObjectNotFound: (C:\Users\ASUS\O...k-clone-youtube:String) [Set-Location], ItemNotFoundException
-    + FullyQualifiedErrorId : PathNotFound,Microsoft.PowerShell.Commands.SetLocationCommand
+# Getting Started with Create React App
 
-PS C:\Users\ASUS\OneDrive\Desktop\PeerLoop> npm cache clean --force
->>
-npm warn using --force Recommended protections disabled.
-```
+This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+
+## Available Scripts
+
+In the project directory, you can run:
+
+### `npm start`
+
+Runs the app in the development mode.\
+Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+
+The page will reload when you make changes.\
+You may also see any lint errors in the console.
+
+### `npm test`
+
+Launches the test runner in the interactive watch mode.\
+See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+
+### `npm run build`
+
+Builds the app for production to the `build` folder.\
+It correctly bundles React in production mode and optimizes the build for the best performance.
+
+The build is minified and the filenames include the hashes.\
+Your app is ready to be deployed!
+
+See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+
+### `npm run eject`
+
+**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+
+If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+
+Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+
+You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+
+## Learn More
+
+You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+
+To learn React, check out the [React documentation](https://reactjs.org/).
+
+### Code Splitting
+
+This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+
+### Analyzing the Bundle Size
+
+This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+
+### Making a Progressive Web App
+
+This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+
+### Advanced Configuration
+
+This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+
+### Deployment
+
+This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
+
+### `npm run build` fails to minify
+
+This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
