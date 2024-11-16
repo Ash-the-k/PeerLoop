@@ -28,7 +28,7 @@ position: fixed;
 width: 100%;
 align-items: center;
 justify-content: space-between;
-padding: 10px 0;
+padding: 11px 0;
 background-color: var(--peerloop-color);
 color: white;
 
