@@ -1,25 +1,29 @@
-import React from "react";
-import "./App.css";
-import {
-  BrowserRouter as Router,
-  Routes,
-  Route,
-} from "react-router-dom";
-import Header from "./components/Header"; // Ensure this import is correct
+import React from 'react';
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+import Header from "./components/Header";
+import SideBar from "./components/Sidebar";
+import styled from 'styled-components';
 
 function App() {
   return (
     <div className="app">
       <Router>
-        <Routes>
-          <Route
-            path="/"
-            element={<Header />} // Use element prop to render Header component
-          />
-        </Routes>
+        <Header /> {/* Always visible */}
+        <AppBody>
+          <SideBar /> {/* Always visible */}
+          <Routes>
+            <Route path="/" element={ <></> }/>
+          </Routes>
+        </AppBody>
       </Router>
     </div>
   );
 }
 
 export default App;
+
+// Styled Components for layout
+const AppBody = styled.div`
+  display: flex;
+  height: 100vh; /* Takes up remaining space below the header */
+`;
