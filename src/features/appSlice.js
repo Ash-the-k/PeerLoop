@@ -1,14 +1,14 @@
 // src/features/counterSlice.js
 import { createSlice } from '@reduxjs/toolkit';
 
-export const counterSlice = createSlice({
+export const appSlice = createSlice({
   name: 'counter',
   initialState: {
-    value: 0,
+    roomId: null,
   },
   reducers: {
-    increment: (state) => {
-      state.value += 1;
+    enterRoom: (state, action) => {
+      state.roomId += action.payload.roomId;
     },
     decrement: (state) => {
       state.value -= 1;
@@ -19,7 +19,9 @@ export const counterSlice = createSlice({
   },
 });
 
-export const { increment, decrement, incrementByAmount } = counterSlice.actions;
+export const { enterRoom } = appSlice.actions;
+
+export const selectRoomId = state => state.app.roomId;
 
 // Export the reducer to be used in the store
-export default counterSlice.reducer;
+export default appSlice.reducer;
