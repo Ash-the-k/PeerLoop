@@ -13,7 +13,6 @@ function App() {
           <SideBar /> {/* Always visible */}
           <Routes>
             <Route path="/" element={ <></> }/>
-            <Chat />
           </Routes>
         </AppBody>
       </Router>

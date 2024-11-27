@@ -1,6 +1,6 @@
 import { addDoc, collection } from 'firebase/firestore'; // Import these
 import React from 'react';
-import { useDispatch } from "react-redux";
+import { useDispatch } from 'react-redux';
 import styled from 'styled-components';
 import { enterRoom } from '../features/appSlice';
 import { db } from '../firebase';
