@@ -1,14 +1,16 @@
-
-import firebase from "firebase";
+import { initializeApp } from 'firebase/app';
+import { getFirestore } from 'firebase/firestore';
 
 const firebaseConfig = {
-    apiKey: "AIzaSyAq9tLGxnwRcIaMoWiCE8jNuUETvN83-4o",
-    authDomain: "peerloop01.firebaseapp.com",
-    projectId: "peerloop01",
-    storageBucket: "peerloop01.firebasestorage.app",
-    messagingSenderId: "697572645751",
-    appId: "1:697572645751:web:cae6923411b39be7741f72",
-    measurementId: "G-WE4XK2GV8H"
-  };
+  apiKey: 'YOUR_API_KEY',
+  authDomain: 'YOUR_AUTH_DOMAIN',
+  projectId: 'YOUR_PROJECT_ID',
+  storageBucket: 'YOUR_STORAGE_BUCKET',
+  messagingSenderId: 'YOUR_MESSAGING_SENDER_ID',
+  appId: 'YOUR_APP_ID',
+};
 
-const firebaseApp =firebase.initializeApp(firebaseConfig);
+const app = initializeApp(firebaseConfig);
+const db = getFirestore(app);
+
+export { db };
