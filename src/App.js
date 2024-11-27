@@ -1,8 +1,8 @@
 import React from 'react';
-import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+import { Route, BrowserRouter as Router, Routes } from 'react-router-dom';
+import styled from 'styled-components';
 import Header from "./components/Header";
 import SideBar from "./components/Sidebar";
-import styled from 'styled-components';
 
 function App() {
   return (
@@ -13,6 +13,7 @@ function App() {
           <SideBar /> {/* Always visible */}
           <Routes>
             <Route path="/" element={ <></> }/>
+            <Chat />
           </Routes>
         </AppBody>
       </Router>
