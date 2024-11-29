@@ -1,5 +1,5 @@
 import { configureStore } from '@reduxjs/toolkit';
-import appReducer from '../features/counter/counterSlice';
+import appReducer from '../features/appSlice';  // correct path
 
 export const store = configureStore({
   reducer: {
